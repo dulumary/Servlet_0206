@@ -48,13 +48,13 @@ public class Ex01Controller extends HttpServlet {
 		
 		
 		
-//		String insertQuery = "INSERT INTO `used_goods`\r\n"
-//				+ "(`sellerId`, `title`, `price`, `description`, `picture`, `createdAt`, `updatedAt`)\r\n"
-//				+ "VALUE \r\n"
-//				+ "(3, '고양이 간식 팝니다', 2000, '저희 고양이가 안먹어서 팝니다', NULL, now(), now());";
-//		
-//		int count = mysqlService.update(insertQuery);
-//		out.println("<div>삽입 결과 : " + count + "</div>");
+		String insertQuery = "INSERT INTO `used_goods`\r\n"
+				+ "(`sellerId`, `title`, `price`, `description`, `picture`, `createdAt`, `updatedAt`)\r\n"
+				+ "VALUE \r\n"
+				+ "(3, '고양이 간식 팝니다', 2000, '저희 고양이가 안먹어서 팝니다', NULL, now(), now());";
+		
+		int count = mysqlService.update(insertQuery);
+		out.println("<div>삽입 결과 : " + count + "</div>");
 		mysqlService.disconnect();
 		
 		
