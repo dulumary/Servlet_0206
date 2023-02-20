@@ -15,12 +15,14 @@
 	<div class="container">
 		<h1>즐겨찾기 추가</h1>
 			
-		<label>사이트 명</label>
-		<input type="text" class="form-control col-4" name="name">
-		<label>사이트 주소</label>
-		<input type="text" class="form-control" name="url">
-		
-		<button type="button" class="btn btn-success">추가</button>
+		<form method="post" action="/database/favorite/insert">
+			<label>사이트 명</label>
+			<input type="text" class="form-control col-4" name="name">
+			<label>사이트 주소</label>
+			<input type="text" class="form-control" name="url">
+			
+			<button type="submit" class="btn btn-success">추가</button>
+		</form>
 		
 	</div>
 </body>
